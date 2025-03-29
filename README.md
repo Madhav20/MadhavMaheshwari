@@ -43,3 +43,8 @@ app/
 There are total 13 unit test cases under test package covering repository and viewmodel functions.
 
 ## Screenshot
+- Click on Load Content button to fetch the data from Truecaller website.
+- A loader will be visible for couple of second.
+- As soon as api fetch the data it will be visible to the user
+- Some operation take time for those a loading text is visible.
+- Every15thCharacter information is shown in a horizontal scrollable view and word count is shown in vertically scrollable grid.
