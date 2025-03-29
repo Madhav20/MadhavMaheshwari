@@ -13,28 +13,33 @@ This is an Android app built using Kotlin, Jetpack Compose, and MVVM architectur
 - Networking: Retrofit + OkHttp
 - Coroutines & Flow: For asynchronous operations
 - Unit Testing: JUnit, Turbine, and MockK
+- KT Lint for code formatting
 
 ## Project 
 ```
 app/
 │
-├── di/                    # Dependency Injection (Dagger Hilt modules)
+├── di/                            # Dependency Injection (Dagger Hilt modules)
 │
-├── home/                  # Core feature module
-│   ├── repository/        # Repository for fetching & processing content
-│   │   ├── ContentActivity.kt # Entry Point
-│   │   ├── ContentApi.kt  # Retrofit API interface
+├── home/                          # Core feature module
+│   ├── repository/                # Repository for fetching & processing content
+│   │   ├── ContentActivity.kt     # Entry Point
+│   │   ├── ContentApi.kt          # Retrofit API interface
 │   │   ├── ContentView.kt 
-│   │   ├── ContentViewModel.kt  # ViewModel handling business logic
-├── utils/                 # Utility classes & helpers
+│   │   ├── ContentViewModel.kt    # ViewModel handling business logic
+├── utils/                         # Utility classes & helpers
 │   ├── ConnectivityCheckInterceptor.kt  # Network connectivity check
-│   ├── Constants.kt       # App-wide constants
-│   ├── DispatcherProvider.kt  # Coroutine dispatcher provider
-│   ├── LoadingIndicator.kt  # UI loading state handling
-│   ├── Status.kt          # Sealed class for API states (Success, Error, Loading)
-│   ├── UIState.kt         # State management for UI
-│   ├── UIStateHandler.kt  # Handles UI state changes
+│   ├── Constants.kt               # App-wide constants
+│   ├── DispatcherProvider.kt      # Coroutine dispatcher provider
+│   ├── LoadingIndicator.kt        # UI loading state handling
+│   ├── Status.kt                  # Sealed class for API states (Success, Error, Loading)
+│   ├── UIState.kt                 # State management for UI
+│   ├── UIStateHandler.kt          # Handles UI state changes
 │
-├── MyApplication.kt       # Application class for Hilt
-├── com/test/              # Unit Tests
+├── MyApplication.kt               # Application class for Hilt
+├── com/test/                      # Unit Tests
 ```
+
+There are total 13 unit test cases under test package covering repository and viewmodel functions.
+
+## Screenshot
